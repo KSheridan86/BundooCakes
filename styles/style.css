@@ -1,28 +1,36 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
 body {
     background: rgb(247, 191, 180);
     background: radial-gradient(circle, rgba(247, 191, 180, 1) 0%, rgba(125, 175, 156, 1) 100%);
 }
 
-nav {
-    background-color: #23967f;
-}
-
-.nav-menu {
+nav, .nav-menu {
     background-color: #23967f;
 }
 
 .nav-link {
-    color: black;
+    color: rgb(57, 57, 57);
     font-size: 1.5rem;
 }
+ul>li>a.active {
+    font-size: 2.5rem;
+}
+
 /* Customized bootstrap hamburger menu icon */
 .navbar-dark .navbar-toggler-icon {
-	background-image: url(
-        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+ul {
+    list-style-type: none;
 }
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 .btn {
@@ -44,8 +52,8 @@ a {
     padding: .5rem;
     border-radius: 50%;
     bottom: 1rem;
-    /* position: fixed;
-    z-index: 5000; */
+    position: fixed;
+    z-index: 5000;
     animation: bounce 0.5s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
@@ -62,6 +70,7 @@ a {
     }
 }
 
-
-
-
+.cupcake {
+    width: 2rem;
+    height: auto;
+}
