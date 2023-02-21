@@ -3,8 +3,18 @@
 }
 
 body {
-    background: rgb(248, 217, 211);
-    background: radial-gradient(circle, rgb(251, 221, 215) 0%, rgb(161, 200, 185) 100%);
+    /* background: rgb(248, 217, 211);
+    background: radial-gradient(circle, rgb(251, 221, 215) 0%, rgb(161, 200, 185) 100%); */
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(248, 217, 211) 0%, rgb(235, 194, 185) 40%,rgb(203, 218, 188) 60%, rgb(161, 200, 185) 100%
+    );
+    background-size: 200% 200%;
+    animation: colorChange 5s linear infinite alternate;
+}
+@keyframes colorChange {
+    from {background-position: 0 0; }
+    to { background-position: 100% 100%;}
 }
 
 nav,
@@ -161,12 +171,35 @@ a {
 
 @media (max-width: 768px) {
     .logo {
-        /* z-index: 100; */
         padding: .5rem 0rem 0rem 1rem;
-        
     }
 }
 
 .logo>a {
     font-family: 'Caveat', cursive;
+}
+
+a:hover {
+    color: inherit;
+}
+
+
+#animate-nav,
+.nav-link:hover, 
+.fa-brands:hover, .btn:hover {
+    color: black;
+    text-decoration: none;
+    animation-name: hero-zoom;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
