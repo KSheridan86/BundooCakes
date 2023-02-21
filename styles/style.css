@@ -3,11 +3,12 @@
 }
 
 body {
-    background: rgb(247, 191, 180);
-    background: radial-gradient(circle, rgba(247, 191, 180, 1) 0%, rgba(125, 175, 156, 1) 100%);
+    background: rgb(248, 217, 211);
+    background: radial-gradient(circle, rgb(251, 221, 215) 0%, rgb(161, 200, 185) 100%);
 }
 
-nav, .nav-menu {
+nav,
+.nav-menu {
     background-color: #23967f;
 }
 
@@ -15,13 +16,9 @@ nav, .nav-menu {
     color: rgb(0, 0, 0, .6);
     font-size: 1.5rem;
 }
+
 ul>li>a.active {
     color: black;
-}
-
-/* Customized bootstrap hamburger menu icon */
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 ul {
@@ -119,6 +116,12 @@ a {
     }
 }
 
+@media (min-width: 768px) {
+    .logo {
+        padding: 1rem 0rem 0rem 0rem;
+    }
+}
+
 #pics {
     clear: both;
     line-height: 0;
@@ -132,4 +135,38 @@ a {
 
 #pics>img {
     width: 100%;
+}
+
+
+/* sidebar test */
+
+.offcanvas {
+    background-color: #23967f;
+}
+
+.offcanvas-start {
+    width: 250px;
+}
+
+.menu-btn {
+    float: right;
+    margin: 0rem 1rem;
+    background-color: rgb(255, 255, 255, 0);
+    z-index: 10;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        /* z-index: 100; */
+        padding: .5rem 0rem 0rem 1rem;
+        
+    }
+}
+
+.logo>a {
+    font-family: 'Caveat', cursive;
 }
