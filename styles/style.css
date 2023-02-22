@@ -82,7 +82,7 @@ a {
     height: auto;
 }
 
-.header-img {
+/* .header-img {
     background: url("/images/header-image.jpg");
     text-align: center;
     width: 100%;
@@ -124,7 +124,7 @@ a {
         border-radius: 0 0 85% 85% / 10%;
         z-index: 5;
     }
-}
+} */
 
 @media (min-width: 768px) {
     .logo {
@@ -175,7 +175,7 @@ a {
     }
 }
 
-.logo>a {
+.logo>a, h3, h5 {
     font-family: 'Caveat', cursive;
 }
 
@@ -201,5 +201,29 @@ a:hover {
 
     to {
         transform: scale(1.1);
+    }
+}
+
+/* Artist page */
+
+.baker-pic {
+    border: 1px solid rgb(0, 0, 0, .5);
+    border-radius: 5%;
+}
+
+.text-box {
+    background-color: rgb(245, 245, 245, .5);
+    padding: 1rem .75rem 0rem .75rem;
+}
+.come-in {
+    transform: translateX(360px);
+    animation: come-in 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes come-in {
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
