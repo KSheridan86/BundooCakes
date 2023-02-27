@@ -39,16 +39,16 @@
                             src="../images/logo.png">Cakes</a></h1>
             </li>
             <li class="nav-item mt-3">
-                <a class="nav-link" href="../"><i class="fas fa-home me-3"></i> Home</a>
+                <a class="nav-link lg-nav" href="../"><i class="fas fa-home me-3"></i> Home</a>
             </li>
             <li class="nav-item mt-3">
-                <a class="nav-link" href="../cakes/"><i class="fa-solid fa-cake-candles me-3"></i> Cakes</a>
+                <a class="nav-link lg-nav" href="../cakes/"><i class="fa-solid fa-cake-candles me-3"></i> Cakes</a>
             </li>
             <li class="nav-item mt-3">
-                <a class="nav-link active" href="/baker"><i class="fa-solid fa-person-dress me-3"></i> Baker</a>
+                <a class="nav-link lg-nav active" href=""><i class="fa-solid fa-person-dress me-3"></i> Baker</a>
             </li>
             <li class="nav-item mt-3">
-                <a class="nav-link" href="../gallery/"><i class="fa-regular fa-image"></i> Gallery</a>
+                <a class="nav-link lg-nav" href="../gallery/"><i class="fa-regular fa-image"></i> Gallery</a>
             </li>
         </ul>
     </div>
@@ -67,7 +67,7 @@
                         <a class="nav-link" href="../cakes/"><i class="fa-solid fa-cake-candles me-3"></i><br> Cakes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/baker"><i class="fa-solid fa-person-dress me-3"></i><br>
+                        <a class="nav-link active" href=""><i class="fa-solid fa-person-dress me-3"></i><br>
                             Baker</a>
                     </li>
                     <li class="nav-item">
@@ -79,14 +79,21 @@
     </div>
 
     <main>
+        <div class="container g-3">
+            <div class="row justify-content-around">
+                <div class="test-box border rounded col-10 col-md-6 col-lg-4">Balls</div>
+                <div class="test-box border rounded col-10 col-md-6 col-lg-4">Balls</div>
+                <div class="test-box border rounded col-10 col-md-6 col-lg-4">Balls</div>
+            </div>
+        </div>
         <div class="container g-1">
             <div class="row justify-content-center mt-2">
-                <img class="col-10 baker-pic p-0 come-in border border-dark rounded" src="../images/jenn.webp">
+                <img class="col-10 col-md-8 col-lg-4 baker-pic p-0 come-in border border-dark rounded" src="../images/jenn.webp">
             </div>
 
             <div class="row justify-content-center mt-4">
                 <h3 class="text-center text-uppercase txt-shadow fs-1">Say Hello to Jenn!</h3>
-                <div class="text-box text-center mt-2 col-10 rounded shadow">
+                <div class="text-box text-center mt-2 col-10 col-md-8 col-lg-4 rounded shadow">
                     <p>
                         Betty Botter had some butter, “But,” she said, “this butter’s bitter.
                         If I bake this bitter butter, it would make my batter bitter.
@@ -99,7 +106,7 @@
             </div>
 
             <div class="row justify-content-center mt-5">
-                <form class="col-10 text-center p-3 text-box rounded shadow">
+                <form class="col-10 col-md-8 col-lg-4 text-center p-3 text-box rounded shadow">
                     <h3 class="text-uppercase txt-shadow fs-1">Get in touch...</h3>
                     <div class="text-center mt-3">
                         <p>
@@ -137,7 +144,7 @@
                             placeholder="Enter your message..." required>Enter your message here... 
                         </textarea>
                     </div>
-                    <button type="submit" class="btn shadow txt-shadow">Send Message</button>
+                    <button type="submit" class="cake-btn btn shadow txt-shadow">Send Message</button>
                 </form>
             </div>
         </div>
@@ -169,7 +176,7 @@
                         <input type="email" class="form-control shadow mt-2" name="email" id="email"
                             placeholder="Enter your Email..." required>
                         <br>
-                        <button type="" class="btn shadow txt-shadow mt-4 mb-4">Sign Up</button>
+                        <button type="" class="cake-btn btn shadow txt-shadow mt-4 mb-4">Sign Up</button>
                     </div>
                 </form>
 

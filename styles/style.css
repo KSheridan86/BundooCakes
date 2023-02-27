@@ -30,6 +30,14 @@ nav,
     color: rgb(0, 0, 0, .6);
     font-size: 1.5rem;
 }
+.lg-nav {
+    margin-left: 2rem;
+}
+@media (min-width: 1100px) {
+    .lg-nav {
+        margin-left: 4rem;
+    }
+}
 
 ul>li>a.active {
     color: black;
@@ -48,6 +56,7 @@ a {
 .btn {
     background-color: #23967f;
 }
+
 .cake-btn {
     background-color: #23967f;
 }
@@ -102,6 +111,16 @@ a {
     column-count: 2;
     column-gap: 0rem;
 }
+@media (min-width: 768px) {
+    #pics {
+        column-count: 3;
+    }
+}
+@media (min-width: 992px) {
+    #pics {
+        column-count: 4;
+    }
+}
 
 #pics>a>img {
     width: 100%;
@@ -151,8 +170,7 @@ a:hover {
 
 #animate-nav,
 .nav-link:hover,
-.fa-brands:hover,
-.btn:hover {
+.fa-brands:hover {
     color: black;
     text-decoration: none;
     animation-name: nav-slide;
@@ -167,11 +185,21 @@ a:hover {
     }
 
     to {
-        transform: translateX(25px);
+        transform: translateX(10px);
     }
 }
 
 /* Artist page */
+@media (min-width: 992px) {
+    #baker-txt-box {
+        margin-top: -20rem;
+    }
+    #extra-pic {
+        margin-top: -40rem;
+        margin-bottom: 20rem;
+    }
+}
+
 .baker-pic {
     box-shadow: 5px 5px 10px 1px;
     object-fit: cover;
@@ -182,7 +210,7 @@ a:hover {
 }
 
 .txt-shadow {
-    text-shadow: 2px 2px 5px rgb(0, 0, 0, .75);
+    text-shadow: 2px 2px 5px rgb(50, 50, 50, .5);
 }
 
 .text-box {
@@ -218,6 +246,7 @@ a:hover {
 .footer-borders-about {
     border-bottom: none;
 }
+
 @media (min-width: 986px) {
     .footer-borders {
         border: none;
@@ -237,22 +266,48 @@ a:hover {
         border-top: none;
     }
 }
+
 @media (min-width: 768px) and (max-width: 968px) {
     .footer-borders-about {
         border-bottom: none;
     }
 }
 
+/* Cakes page */
+
 .cake-page {
     object-fit: cover;
     height: 100%;
     width: auto;
 }
+.cake-card:hover, .cake-btn:hover {
+    color: black;
+    text-decoration: none;
+    animation-name: img-swell;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes img-swell {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.cake-card {
+    padding: 0%;
+    margin: 0%;
+}
 
 .pic-box {
     height: 10rem;
     width: auto;
-    padding: 0;
+    padding: .5rem;
     margin: 0;
 }
 
@@ -270,4 +325,9 @@ a:hover {
 
 #savoury {
     display: none;
+}
+
+
+.test-box {
+    background-color: #23967f;
 }
