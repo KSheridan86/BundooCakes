@@ -169,8 +169,7 @@ a:hover {
 
 
 #animate-nav,
-.nav-link:hover,
-.fa-brands:hover {
+.nav-link:hover {
     color: black;
     text-decoration: none;
     animation-name: nav-slide;
@@ -187,6 +186,22 @@ a:hover {
     to {
         transform: translateX(10px);
     }
+}
+
+.fa-square-facebook:hover, .btn:hover {
+    color: #0165E1;
+    animation-name: img-swell;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.fa-square-instagram:hover {
+    color: #E4405F;
+    animation-name: img-swell;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
 /* Artist page */
@@ -220,8 +235,23 @@ a:hover {
 }
 
 .come-in {
+    transform: translateX(-360px);
+    animation: come-in 1s ease forwards;
+    opacity: 0;
+}
+#contact-form {
     transform: translateX(360px);
     animation: come-in 1s ease forwards;
+    opacity: 0;
+}
+#pics {
+    transform: translateX(0);
+    animation: come-in 2s ease forwards;
+    opacity: 0;
+}
+#cake-container {
+    transform: translateX(0);
+    animation: come-in 2s ease forwards;
     opacity: 0;
 }
 

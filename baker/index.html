@@ -79,77 +79,68 @@
     </div>
 
     <main>
-        <div class="container g-3">
-            <div class="row justify-content-around">
-                <div class="test-box border rounded col-10 col-md-6 col-lg-4">Balls</div>
-                <div class="test-box border rounded col-10 col-md-6 col-lg-4">Balls</div>
-                <div class="test-box border rounded col-10 col-md-6 col-lg-4">Balls</div>
-            </div>
-        </div>
-        <div class="container g-1">
-            <div class="row justify-content-center mt-2">
-                <img class="col-10 col-md-8 col-lg-4 baker-pic p-0 come-in border border-dark rounded" src="../images/jenn.webp">
-            </div>
+        <div class="container g-3 border-bottom border-dark border-2">
+            <div class="row justify-content-around mb-5">
+                <h3 class="text-center text-uppercase txt-shadow fs-1 mt-3">Say Hello to Jenn!</h3>
 
-            <div class="row justify-content-center mt-4">
-                <h3 class="text-center text-uppercase txt-shadow fs-1">Say Hello to Jenn!</h3>
-                <div class="text-box text-center mt-2 col-10 col-md-8 col-lg-4 rounded shadow">
-                    <p>
-                        Betty Botter had some butter, “But,” she said, “this butter’s bitter.
-                        If I bake this bitter butter, it would make my batter bitter.
-                        But a bit of better butter – that would make my batter better.”
-                        So she bought a bit of butter, better than her bitter butter,
-                        and she baked it in her batter, and the batter was not bitter.
-                        So ’twas better Betty Botter bought a bit of better butter.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center mt-5">
-                <form class="col-10 col-md-8 col-lg-4 text-center p-3 text-box rounded shadow">
-                    <h3 class="text-uppercase txt-shadow fs-1">Get in touch...</h3>
-                    <div class="text-center mt-3">
-                        <p>
-                            Got a special event coming up?
-                            <br>
-                            Want a stall set up at your event?
-                            <br>
-                            Need to cater for 30+ spirited kids?
-                            <br>
-                            Whatever it is I would love to hear from you.
-                            <br>
-                            <br>
-                            Just enter your details below
-                            <br>
-                            and I will get back to you as soon as possible.
+                <div class="col-12 col-md-6 col-lg-5">
+                    <img class="col-12 baker-pic come-in border border-dark rounded mt-2" src="../images/jenn.webp">
+                    <div class="text-box text-center mt-4 rounded shadow">
+                        <p class="p-2 p-md-4 p-lg-0">
+                            Betty Botter had some butter, “But,” she said, “this butter’s bitter.
+                            If I bake this bitter butter, it would make my batter bitter.
+                            But a bit of better butter – that would make my batter better.”
+                            So she bought a bit of butter, better than her bitter butter,
+                            and she baked it in her batter, and the batter was not bitter.
+                            So ’twas better Betty Botter bought a bit of better butter.
                         </p>
                     </div>
+                </div>
 
-                    <div class="mb-2">
-                        <label for="name" class=""></label>
-                        <input type="text" class="form-control shadow" id="name" placeholder="Please enter your name..."
-                            required>
-                    </div>
-
-                    <div class="mb-2">
-                        <label for="email" class="form-label"></label>
-                        <input type="email" class="form-control shadow" id="email"
-                            placeholder="Please enter your email..." required>
-                        <div id="emailHelp" class="text-muted mt-1">We'll never share your email with anyone else.</div>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="message" class="form-label"></label>
-                        <textarea class="form-control text-muted shadow" name="message" rows="5"
-                            placeholder="Enter your message..." required>Enter your message here... 
-                        </textarea>
-                    </div>
-                    <button type="submit" class="cake-btn btn shadow txt-shadow">Send Message</button>
-                </form>
+                <div class="col-12 col-md-6 col-lg-5">
+                    <form id="contact-form" class="mt-2 mb-3 text-center p-3 text-box rounded shadow">
+                        <h3 class="text-uppercase txt-shadow fs-1">Get in touch...</h3>
+                        <div class="text-center mt-3">
+                            <p>
+                                Got a special event coming up?
+                                <br>
+                                Want a stall set up at your event?
+                                <br>
+                                Need to cater for 30+ spirited kids?
+                                <br>
+                                Whatever it is I would love to hear from you.
+                                <br>
+                                <br>
+                                Just enter your details below
+                                <br>
+                                and I will get back to you as soon as possible.
+                            </p>
+                        </div>
+    
+                        <div class="mb-2">
+                            <label for="name" class=""></label>
+                            <input type="text" class="form-control shadow" id="name" placeholder="Please enter your name..."
+                                required>
+                        </div>
+    
+                        <div class="mb-2">
+                            <label for="email" class="form-label"></label>
+                            <input type="email" class="form-control shadow" id="email"
+                                placeholder="Please enter your email..." required>
+                            <div id="emailHelp" class="text-muted mt-1">We'll never share your email with anyone else.</div>
+                        </div>
+    
+                        <div class="mb-4">
+                            <label for="message" class="form-label"></label>
+                            <textarea class="form-control text-muted shadow" name="message" rows="5"
+                                placeholder="Enter your message..." required>Enter your message here... 
+                            </textarea>
+                        </div>
+                        <button type="submit" class="cake-btn btn shadow txt-shadow">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
-
-
 
     </main>
 
@@ -173,10 +164,10 @@
                             placeholder="Enter your Name..." required>
                         <br>
                         <label for="email" class="d-none">Email</label>
-                        <input type="email" class="form-control shadow mt-2" name="email" id="email"
+                        <input type="email" class="form-control shadow" name="email" id="email"
                             placeholder="Enter your Email..." required>
                         <br>
-                        <button type="" class="cake-btn btn shadow txt-shadow mt-4 mb-4">Sign Up</button>
+                        <button type="" class="cake-btn btn shadow txt-shadow mb-4">Sign Up</button>
                     </div>
                 </form>
 
