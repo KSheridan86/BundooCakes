@@ -273,11 +273,11 @@ a:hover {
 
 
 /* possible problem above 968px */
-.footer-borders-about {
+/* .footer-borders-about {
     border-bottom: none;
-}
+} */
 
-@media (min-width: 986px) {
+@media (min-width: 968px) {
     .footer-borders {
         border: none;
     }
@@ -291,7 +291,7 @@ a:hover {
     }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
     .footer-borders-4x4 {
         border-top: none;
     }
@@ -360,4 +360,24 @@ a:hover {
 
 .test-box {
     background-color: #23967f;
+}
+
+.form-control {
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .form-control {
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .form-control {
+        width: 75%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .form-control {
+        width: 50%;
+    }
 }
