@@ -38,3 +38,15 @@ function showOccasions() {
     cupcakesBox.style.display = 'none';
     occasionsBox.style.display = 'flex';
 }
+
+// Code to hide the back to top button until the user scrolls down
+// let topBtn = document.querySelector('.top-btn');
+// function backToTop() {
+//     topBtn.style.display = "none";
+//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+//         topBtn.style.display = "block";
+//     } else {
+//         topBtn.style.display = "none";
+//     }
+// }
+// window.addEventListener("scroll", backToTop);
