@@ -113,9 +113,15 @@ a:hover {
     animation-iteration-count: 1;
 }
 
-.fa-square-facebook:hover,
-.btn:hover {
+.fa-square-facebook:hover {
     color: #0165E1;
+    animation-name: img-swell;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.btn:hover {
+    color: black;
     animation-name: img-swell;
     animation-duration: .75s;
     animation-fill-mode: forwards;
@@ -277,7 +283,7 @@ a:hover {
 
 .hero {
     background: url("../images/mobile-hero-compressed.png");
-    background-position: 25rem 3rem;
+    background-position: 0rem 3rem;
     background-repeat: no-repeat;
     text-align: center;
     width: 100%;
@@ -291,9 +297,29 @@ a:hover {
     z-index: 5;
 }
 
+#hero-box {
+    height: 65vh;
+}
+@media (min-width: 450px) {
+    #hero-box {
+        height: 75vh;
+    }
+}
+@media (min-width: 525px) {
+    #hero-box {
+        height: 85vh;
+    }
+}
+@media (min-width: 768px) {
+    #hero-box {
+        height: 70vh;
+    }
+}
+
 .hero-lg-screen {
     background: url("../images/mobile-hero-compressed.png");
     background-repeat: no-repeat;
+    /* background-position: 0rem 6rem; */
     text-align: start;
     width: 50%;
     height: 100vh;
@@ -301,8 +327,17 @@ a:hover {
     border-radius: 0 0 85% 85% / 10%;
     z-index: 5;
 }
+@media (min-width: 992px) and (max-width: 1099px) {
+    .hero-lg-screen {
+        background-position: 0rem 6rem;
+    }
+}
 
-
+/* @media (min-width: 992px) and (max-width: 1199px) {
+    .hero {
+        background-position: 15rem 5rem;;
+    }
+} */
 
 .accordion-button {
     background-color: #23967f;
@@ -389,10 +424,10 @@ a:hover {
 
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .hero {
         background: url("../images/mobile-hero-compressed.png");
-        background-position: 0rem 4rem;
+        background-position: 1rem 6rem;
         background-repeat: no-repeat;
         text-align: center;
         width: 100%;
