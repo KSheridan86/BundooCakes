@@ -77,11 +77,12 @@
 
     <main>
         <!-- Hero Image -->
-        <div style="height: 60vh;" class="hero"></div>
+        <div style="height: 60vh;" class="hero d-lg-none"></div>
+        
         <!-- Main Content -->
 
         <!-- Intro -->
-        <div class="container">
+        <div class="container d-lg-none">
             <div class="row justify-content-center">
                 <div class="col-10 col-md-5 col-lg-3 shadow rounded cake-card m-1">
                     <div class="text-center mb-2 p-2">
@@ -100,10 +101,30 @@
                 </div>
             </div>
         </div>
+        <div class="container d-none d-lg-flex">
+            <div class="row justify-content-around">
+                <div class="col-5 hero-lg-screen d-none d-lg-flex"></div>
+                <div class="col-10 col-md-5 col-lg-5 rounded m-1">
+                    <div class="text-center p-5 mt-5">
+                        <h1 class="text-center txt-shadow mb-4 mt-5">Welcome to Bundoo Cakes</h1>
+                        <p>
+                            Welcome to Bundoo Cakes,
+                            a bakery that specializes in crafting delicious cakes and treats for all
+                            your special occasions. Our bakery offers a wide range of delectable treats,
+                            including bread and savory offerings, all made with the finest ingredients
+                            and baked to perfection. Our team of skilled bakers is dedicated to creating
+                            the perfect cake for your celebration, whether it's a wedding, birthday,
+                            or any other special event. From classic flavors to unique and creative designs,
+                            Bundoo Cakes has something for everyone. Come and visit us today to satisfy your
+                            sweet and savory cravings!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Featured products -->
         <div class="container mt-5">
-            <div class="row justify-content-center ">
-                <h1 class="mt-3 txt-shadow text-center">Featured Products</h1>
+            <div class="row justify-content-evenly ">
+                <h1 class="mt-3 mb-lg-5 txt-shadow text-center">Featured Products</h1>
                 <div class="col-10 col-md-5 col-lg-3 shadow rounded mt-3 m-1">
                     <div class="pic-box text-center">
                         <img class="cake-page border border-dark rounded shadow mt-2"
@@ -145,7 +166,7 @@
         </div>
         <!-- Testimonials -->
         <div>
-            <h1 class="mt-5 text-center txt-shadow">Testimonials</h1>
+            <h1 class="mt-5 mb-lg-5 text-center txt-shadow">Testimonials</h1>
         </div>
 
         <div class="container">
@@ -248,7 +269,7 @@
                             <h5 class="fs-3">Connect with us on Social media:</h5>
 
 
-                            <div class="col-lg-12 text-center mb-3">
+                            <div class="col-lg-12 text-center mb-3 mt-lg-5">
                                 <a href="https://www.facebook.com/bundoocakes" target="_blank" rel="noopener"
                                     aria-label="social media link - facebook"
                                     class="social text-reset mx-2 text-decoration-none">
