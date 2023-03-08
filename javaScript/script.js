@@ -1,11 +1,19 @@
 let allBtn = document.querySelector(".all-btn");
-allBtn.addEventListener('click', allCakes);
+if (allBtn) {
+    allBtn.addEventListener('click', allCakes);
+}
 let savouryBtn = document.querySelector(".savoury-btn");
-savouryBtn.addEventListener('click', showSavoury);
+if (savouryBtn) {
+    savouryBtn.addEventListener('click', showSavoury);
+}
 let cupcakesBtn = document.querySelector(".cupcakes-btn");
-cupcakesBtn.addEventListener('click', showCupcakes);
+if (cupcakesBtn) {
+    cupcakesBtn.addEventListener('click', showCupcakes);
+}
 let occasionsBtn = document.querySelector(".occasions-btn");
-occasionsBtn.addEventListener('click', showOccasions);
+if (occasionsBtn) {
+    occasionsBtn.addEventListener('click', showOccasions);
+}
 let box = document.querySelector('#box-of-cakes');
 let savouryBox = document.querySelector('#savoury')
 let occasionsBox = document.querySelector('#occasions')
@@ -40,13 +48,17 @@ function showOccasions() {
 }
 
 // Code to hide the back to top button until the user scrolls down
-// let topBtn = document.querySelector('.top-btn');
-// function backToTop() {
-//     topBtn.style.display = "none";
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         topBtn.style.display = "block";
-//     } else {
-//         topBtn.style.display = "none";
-//     }
-// }
-// window.addEventListener("scroll", backToTop);
+function backToTop() {
+    let topBtn = document.querySelector('.top-btn');
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        if (topBtn) {
+            topBtn.style.display = "flex";
+        }
+    } else {
+        if (topBtn) {
+            topBtn.style.display = "none";
+        }
+    }
+}
+
+window.addEventListener("scroll", backToTop);
