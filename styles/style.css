@@ -41,7 +41,11 @@ nav,
 
 ul>li>a.active {
     color: black;
-    text-decoration: underline;
+}
+@media (min-width: 768px) {
+    ul>li>a.active>i {
+        color: #23967f;
+    }
 }
 
 ul {
@@ -55,6 +59,7 @@ a {
 
 .btn {
     background-color: #23967f;
+    color: whitesmoke;
 }
 
 .cake-btn {
@@ -133,7 +138,7 @@ a:hover {
     animation-iteration-count: 1;
 }
 .btn:hover {
-    color: black;
+    color: whitesmoke;
     animation-name: img-swell;
     animation-duration: .75s;
     animation-fill-mode: forwards;
@@ -160,8 +165,16 @@ a:hover {
     border-bottom: 1px solid #252525;
 }
 
-#chimp-tech {
+.chimp-tech {
     font-family: 'Caveat', cursive;
+    color: whitesmoke
+}
+.chimp-tech:hover {
+    color: whitesmoke;
+}
+
+#footer {
+    border-top: #23967f 3px solid;
 }
 
 /* Bootstrap navbar customization */
@@ -201,6 +214,7 @@ a:hover {
 .baker-pic {
     box-shadow: 5px 5px 10px 1px;
     object-fit: cover;
+    height: 70vh;
 }
 
 .text-box {
@@ -236,7 +250,7 @@ a:hover {
 
 .cake-card:hover,
 .cake-btn:hover {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     animation-name: img-swell;
     animation-duration: .75s;
@@ -308,7 +322,7 @@ a:hover {
 /* Testimonials accordion from Bootstrap 5 */
 .accordion-button {
     background-color: #23967f;
-    color: black;
+    color: whitesmoke;
     border: none;
     border-radius: 0;
     text-align: left;
@@ -325,7 +339,7 @@ a:hover {
 }
 
 .accordion-button:not(.collapsed) {
-    color: black;
+    color: whitesmoke;
     background-color: rgb(35, 150, 127);
 }
 
@@ -454,6 +468,9 @@ a:hover {
 @media (min-width: 768px) and (max-width: 968px) {
     .footer-borders-about {
         border-bottom: none;
+    }
+    .baker-pic {
+        height: 90vh;
     }
 }
 @media (min-width: 968px) {
