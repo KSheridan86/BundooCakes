@@ -7,6 +7,9 @@
 	"settings": {
 		"files.autoSave": "afterDelay",
 		"workbench.colorTheme": "Visual Studio Dark",
-		"terminal.integrated.gpuAcceleration": "canvas"
+		"terminal.integrated.gpuAcceleration": "canvas",
+		"cSpell.words": [
+			"GRIYXRDQY"
+		]
 	}
 }

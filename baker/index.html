@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Banger&family=Caveat:wght@500&family=Lobster&family=Special+Elite&family=Teko&family=Oswald&family=Playfair+Display:wght@500&display=swap"
         rel="stylesheet">
+    <!-- possibly needed for emailjs -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
     <title>Bundoo Cakes</title>
 </head>
 
@@ -101,11 +104,11 @@
 
                 <div class="col-12 col-lg-5">
                     <small class="review text-danger text-center">
-                        *This will send an email to you when completed, 
+                        *This will send an email to you when completed,
                         anything you want to let them know about contacting you can be added here...* #7.
                     </small>
                     <form id="contact-form" class="mt-2 mb-3 text-center p-3 text-box rounded shadow">
-                        
+
                         <h3 class="text-uppercase txt-shadow fs-1">Get in touch</h3>
                         <div class="text-center mt-3">
                             <p>
@@ -123,27 +126,28 @@
                                 and I will get back to you as soon as possible.
                             </p>
                         </div>
-    
+
                         <div class="mb-2">
                             <label for="name"></label>
-                            <input type="text" class="form-control shadow m-auto" id="name" placeholder="Please enter your name..."
-                                required>
+                            <input type="text" class="form-control shadow m-auto" id="fullName"
+                                placeholder="Please enter your name..." required>
                         </div>
-    
+
                         <div class="mb-2">
                             <label for="email"></label>
-                            <input type="email" class="form-control shadow m-auto" id="email"
+                            <input type="email" class="form-control shadow m-auto" id="email_id"
                                 placeholder="Please enter your email..." required>
-                            <div id="emailHelp" class="text-muted mt-1">We'll never share your email with anyone else.</div>
+                            <div id="emailHelp" class="text-muted mt-1">We'll never share your email with anyone else.
+                            </div>
                         </div>
-    
+
                         <div class="mb-4">
                             <label for="message"></label>
-                            <textarea class="form-control text-muted shadow m-auto" name="message" rows="5"
-                                placeholder="Enter your message..." required>Enter your message here... 
+                            <textarea class="form-control text-muted shadow m-auto" id="message" name="message" rows="5"
+                                placeholder="Enter your message..." required>
                             </textarea>
                         </div>
-                        <button type="submit" class="cake-btn btn shadow txt-shadow mb-3 mt-3">Send Message</button>
+                        <button id="sendMessage" type="submit" class="cake-btn btn shadow txt-shadow mb-3 mt-3">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -202,8 +206,7 @@
                 </section>
 
                 <!-- About -->
-                <div
-                    class="col-md-4 col-lg-5 col-xl-3 mx-auto mb-4 text-center footer-borders footer-borders-4x4">
+                <div class="col-md-4 col-lg-5 col-xl-3 mx-auto mb-4 text-center footer-borders footer-borders-4x4">
                     <h5 class="text-uppercase mb-4 mt-3 txt-shadow fs-3">
                         Bundoo Cakes
                     </h5>
@@ -269,6 +272,15 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/7beb4c51dd.js" crossorigin="anonymous" defer></script>
+    <!-- Emailjs Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("add User_id here");
+        })();
+    </script>
+
 </body>
 
 </html>
