@@ -62,27 +62,3 @@ function backToTop() {
 }
 
 window.addEventListener("scroll", backToTop);
-
-// Code to set up emails with emailjs
-
-function success() {
-    console.log('Message sent function triggered....')
-}
-
-function sendMail(event) {
-    event.preventDefault();
-    var params = {
-        from_name: document.getElementById('fullName').value,
-        email_id: document.getElementById('email_id').value,
-        message: document.getElementById('message').value,
-    }
-    emailjs.send("service_id", "template_id", params).then(function(res) {
-        console.log("Success", res.status);
-    });
-    document.getElementById('fullName').value = "";
-    document.getElementById('email_id').value = "";
-    document.getElementById('message').value = "";
-    success();
-}   
-let sendMessage = document.querySelector('#sendMessage');
-sendMessage.addEventListener('click', sendMail);
