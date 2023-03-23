@@ -235,6 +235,19 @@ a:hover {
     opacity: 0;
 }
 
+#success-box {
+    display: none;
+}
+
+#nameError, #emailError, #msgError, #nameErrorNl, #emailErrorNl, #newsletter-success{
+    display: none;
+}
+
+#nameNl, #emailNl {
+    display: block;
+}
+
+
 /* Cakes page */
 #cake-container {
     transform: translateX(0);

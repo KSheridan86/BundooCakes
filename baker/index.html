@@ -89,11 +89,11 @@
                     <img class="col-12 baker-pic come-in border border-dark rounded mt-2" src="../images/jenn.webp">
                     <div class="text-box text-center mt-3 rounded shadow come-in">
                         <p class="p-2 p-md-4 p-lg-1">
-                            Meet our fantastic baker with over a decade of experience in creating custom cakes. 
-                            Her passion for baking started at a young age and has only grown stronger over the years. 
-                            With a keen eye for detail and a commitment to quality, she creates beautiful and delicious 
-                            cakes that are tailored to your individual needs. 
-                            From elegant wedding cakes to fun and whimsical birthday cakes, she can do it all. 
+                            Meet our fantastic baker with over a decade of experience in creating custom cakes.
+                            Her passion for baking started at a young age and has only grown stronger over the years.
+                            With a keen eye for detail and a commitment to quality, she creates beautiful and delicious
+                            cakes that are tailored to your individual needs.
+                            From elegant wedding cakes to fun and whimsical birthday cakes, she can do it all.
                             Let her bring your vision to life with her expert baking skills and creativity.
                         </p>
                     </div>
@@ -118,28 +118,44 @@
                                 and I will get back to you as soon as possible.
                             </p>
                         </div>
-
-                        <div class="mb-2">
-                            <label for="name"></label>
-                            <input type="text" class="form-control shadow m-auto" id="fullName"
-                                placeholder="Please enter your name..." required>
-                        </div>
-
-                        <div class="mb-2">
-                            <label for="email"></label>
-                            <input type="email" class="form-control shadow m-auto" id="email_id"
-                                placeholder="Please enter your email..." required>
-                            <div id="emailHelp" class="text-muted mt-1">We'll never share your email with anyone else.
+                        <div id="msg-box">
+                            <div class="mb-2">
+                                <label for="name"></label>
+                                <input type="text" class="form-control shadow m-auto" id="fullName"
+                                    placeholder="Please enter your name..." required>
+                                <small class="text-danger" id="nameError">**Please enter your name**</small>
                             </div>
-                        </div>
 
-                        <div class="mb-4">
-                            <label for="message"></label>
-                            <textarea class="form-control text-muted shadow m-auto" id="message" name="message" rows="5"
-                                placeholder="Enter your message..." required>
+                            <div class="mb-2">
+                                <label for="email"></label>
+                                <input type="email" class="form-control shadow m-auto" id="email_id"
+                                    placeholder="Please enter your email..." required>
+                                <small class="text-danger" id="emailError">**Please enter a valid email**</small>
+
+                                <div id="emailHelp" class="text-muted mt-1">We'll never share your email with anyone
+                                    else.
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message"></label>
+                                <textarea class="form-control text-muted shadow m-auto" id="message" name="message"
+                                    rows="5" placeholder="Enter your message..." required>
                             </textarea>
+                                <small class="text-danger" id="msgError">**Please enter a message**</small>
+
+                            </div>
+                            <button id="sendMessage" type="submit" class="cake-btn btn shadow txt-shadow mb-4 mt-3">Send
+                                Message</button>
                         </div>
-                        <button id="sendMessage" type="submit" class="cake-btn btn shadow txt-shadow mb-4 mt-3">Send Message</button>
+                        <div id="success-box">
+                            <h3 class="text-uppercase txt-shadow fs-1 mt-5 mb-5">Thank you!</h3>
+                            <p class="text-center">
+                                Your message has been sent.
+                                <br>
+                                I will get back to you as soon as possible.
+                            </p>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -154,23 +170,35 @@
         <!-- Newsletter Signup -->
         <div class="container-fluid g-5 mt-4">
             <div class="row justify-content-lg-center justify-content-md-center">
-                <form method="" action="" class="col-12 col-md-7 col-lg-6 col-xl-3 form-inline footer-borders">
+                <form class="col-12 col-md-7 col-lg-6 col-xl-3 form-inline footer-borders">
                     <div class="form-group mb-2 text-center mt-3 text-uppercase txt-shadow">
                         <h5 class="fs-3">
                             <!-- Keep up to date with upcoming events and special offers<br> -->
                             Sign up to our Newsletter here
                         </h5>
                     </div>
-                    <div class="form-group container mt-4 mb-4 text-center">
+                    <div id="newsletter-box" class="form-group container mt-4 mb-4 text-center">
                         <label for="name" class="d-none">Name</label>
-                        <input type="text" class="form-control shadow m-auto" name="name" id="name"
+                        <input type="text" class="form-control shadow m-auto" name="name" id="nameNl"
                             placeholder="Enter your Name..." required>
+                        <small class="text-danger" id="nameErrorNl">**Please enter your name**</small>
+
                         <br>
                         <label for="email" class="d-none">Email</label>
-                        <input type="email" class="form-control shadow m-auto" name="email" id="email"
+                        <input type="email" class="form-control shadow m-auto" name="email" id="emailNl"
                             placeholder="Enter your Email..." required>
+                        <small class="text-danger" id="emailErrorNl">**Please enter a valid email**</small>
+
                         <br>
-                        <button type="" class="cake-btn btn shadow txt-shadow mb-4">Sign Up</button>
+                        <button id="nlBtn" type="" class="cake-btn btn shadow txt-shadow mb-4">Sign Up</button>
+                    </div>
+                    <div id="newsletter-success" class="form-group container mt-4 mb-4 text-center">
+                        <h3 class="text-uppercase txt-shadow fs-1 mt-5 mb-5">Thank you!</h3>
+                        <p class="text-center">
+                            You have been added to our newsletter.
+                            <br>
+                            You will receive a confirmation email shortly.
+                        </p>
                     </div>
                 </form>
 
@@ -275,7 +303,9 @@
             emailjs.init();
         })("uoGVktHyGRIYXRDQY");
     </script> -->
-    <script>publicKey()</script>
+    <script>
+        publicKey()
+    </script>
 
 </body>
 
