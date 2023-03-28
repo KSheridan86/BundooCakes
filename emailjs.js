@@ -56,10 +56,10 @@ function validateForm() {
         emailError.style.display = 'none';
     }
 
-    if (message == null || message == "" || message.value == undefined) {
+    if (message == null || message == "") {
         msgError.style.display = 'block';
+        console.log(message)
         return false
-        
     } else {
         msgError.style.display = 'none';
         return true
