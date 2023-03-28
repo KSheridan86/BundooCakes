@@ -42,6 +42,7 @@ function validateForm() {
     } else {
         nameError.style.display = 'none';
     }
+
     if (email == null || email == "") {
         emailError.style.display = 'block';
         return false
@@ -54,9 +55,11 @@ function validateForm() {
     } else {
         emailError.style.display = 'none';
     }
-    if (message == null || message == "") {
+
+    if (message == null || message == "" || message.length < 1 || message.value == undefined) {
         msgError.style.display = 'block';
         return false
+        
     } else {
         msgError.style.display = 'none';
         return true
