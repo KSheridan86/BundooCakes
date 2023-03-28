@@ -56,7 +56,7 @@ function validateForm() {
         emailError.style.display = 'none';
     }
 
-    if (message == null || message == "" || message.length < 1 || message.value == undefined) {
+    if (message == null || message == "" || message.value == undefined) {
         msgError.style.display = 'block';
         return false
         
