@@ -7,6 +7,3 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
-../emailjs.js
-.emailjs.js
-emailjs.js
