@@ -1,108 +1,240 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Three Decades of Discovery
+## The Hubble Space Telescope
 
-Welcome USER_NAME,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+> Live site available here: [Three Decades of Discovery](https://ksheridan86.github.io/project-1-hubble/index.html)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![responsive-example](./assets/docs/responsive-design.png)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Table of Contents
 
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- [Description](#description)
+- [Theme](#theme)
+- [Features](#features)
+- [Testing](#testing)
+- [Technologies](#technologies)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+- [Author Info](#author-info)
 
 ------
 
-## Release History
+## Description
+This project was designed to give information and provide education on the Hubble Space Telescope. The information provided is easily understandable and will give a user who is familiar with the telescope aswell as a user who has never heard of the telescope a brief understanding of what it is, what it does, it's history and contributions to science.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+It will also include multiple examples of Hubbles imagery.
 
 ------
+## Theme 
 
-## FAQ about the uptime script
+The theme choosen for this site was Space and Sci-Fi in general, the main question I considered at every step was:
 
-**Why have you added this script?**
+`Is it
+Minimal, Clean, Slick, Professional?`
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+Therefore I chose only a few simple colors to highlight the quality of the images themselves.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+These were:
+- #000 Black
+- #CCC Off White
+- #80b0bb Light blue
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+The images contained these colors but were also rich in various hues of yellow, orange, red, green and blue.
+By keeping the color scheme simple the colors in the images get to take center stage.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+I then implemented a scroll style which would maximize the impact of the images.
+By giving the images a position of "sticky" in the css file they would stick to the top of the page and let the following text roll over the top.
+To enhance this effect I gave the text sections an opaque background so even as they were covering the image you could still see it holding firm on the top of the page.
 
 ---
 
-Happy coding!
+## Features
+
+> ### Navigation menu [screenshot](./assets/docs/menu.png)
+On mobile and tablet devices the main navigation menu is housed inside a hamburger menu. (See Credits below...[credits](#credits))
+This opens up with a little animation and reveals links to all four pages.
+On laptops or bigger devices the menu is spread across the header bar which also contains the logo.
+
+> ### Logo [screenshot](./assets/docs/logo.png)
+The logo is simply the name of the telescope in an off white color and shown in the iconic NASA font. This is also a link to the Home page which can be easily accessed from anywhere within the site.
+
+> ### Hero Image [screenshot](./assets/docs/Home-page.png)
+The Hero image changes on each of the first three pages, the gallery page has enough imagery so as not to warrant one.
+Each image was chosen with regard to the content on each page.
+
+The Home page opens with a shot of planet Earth our one and only home in this vast galactic neighbourhood.
+
+The About page continues with this idea seen on the home page but incorporates a visual of Hubble in orbit around earth.
+
+The Operations page shows the Space Shuttle Discovery sitting on the launchpad at Kennedy Space Center, Florida. It was this shuttle that launched Hubble into orbit and performed multiple servicing missions to the telescope.   
+
+> ### Footer [screenshot](./assets/docs/footer.png)
+The Footer includes all social media links which link to Hubbles official social media accounts.
+
+On top of the footer you will find an attached "Back to Top" button, the text inside this button relays the current page title and allows quick navigation to the top of the page and ultimately the navigation menu.
+Because of the usefulness of this button the footer is fixed to the bottom of the viewport and will stay in place as you scroll around the page.
+
+> ### Home Page  [screenshot](./assets/docs/Home-page.png)
+This page gives a brief synopsis of the telescope and it's contributions to the scientific community.
+Here you will also find a video packed with wonderful imagery from the solar system and beyond.
+> ### About Page [screenshot](./assets/docs/about-page.png)
+This page summarises the story of Hubble, from who it was named for, when it was launched to it's continuing contributions.
+> ### Operations Page [screenshot](./assets/docs/operations-page.png)
+Here you will find information on who operates the telescope and information on the systems onboard that allow it's mission to be such a success.
+
+> ### Image Gallery [screenshot](./assets/docs/gallery-page.png)
+This page holds numerous high quality images taken by the Hubble telescope. 
+
+[Back to the Top](#three-decades-of-discovery)
+
+---
+
+## Testing
+
+Testing was done in a number of ways.
+
+ > #### Manual Testing
+ 
+ This was undertaken by myself, my wife and a number of friends, aswell as the Code Institute slack channels.
+ We tested all links to confirm they worked and opened on a new blank page and went where they were supposed to. Multiple devices were used to confirm the site worked as it should and it displayed correctly across different screen sizes and browsers.
+
+
+ > #### Online Testing
+
+ All code was run through a validator and returned zero errors.
+ These validator sites were:
+
+- [Jigsaw css validator](https://jigsaw.w3.org/css-validator/#validate_by_uri)
+- [W3C Validator](https://validator.w3.org/)
+
+
+Screenshots of all these results can be found below.
+
+[CSS](./assets/docs/css.png)
+[Home](./assets/docs/home.png)
+[About](./assets/docs/about.png)
+[Operations](./assets/docs/operations.png)
+[Gallery](./assets/docs/gallery.png)
+
+> #### Responsivity Testing
+
+
+This website allowed me to select a number of devices with different size screens and viewports and see how my website looked on each of them.
+
+- [Responsive Checker](https://responsivechecker.net/responsive)
+
+> #### Google Lighthouse
+
+![Mobile Results](./assets/docs/lighthouse-mobile-400px.png) ![Desktop Results](./assets/docs/lighthouse-desktop-400px.png)
+
+
+[Back to the Top](#three-decades-of-discovery)
+
+---
+
+## Technologies
+
+- HTML
+- CSS
+- GitHub
+- GitPod
+- Visual Studio Code
+- Markdown
+- FontAwesome
+- CDNfonts
+
+#### Resources
+
+- Code Institute Curriculum
+- YouTube
+- Udemy
+- FreeCodeCamp
+- W3Schools.com
+- MDN Web Docs
+
+
+
+[Back to the Top](#three-decades-of-discovery)
+
+---
+
+## Deployment
+
+The steps below will outline how to deploy, clone or fork this repository.
+These steps assume that you have a GitHub/GitPod account, if not please start [here](https://www.github.com) by creating a GitHub account and installing the GitPod extension.
+
+This project was deployed using GitHub pages.
+The procedure for doing this is very straight forward.
+
+- Inside the repository click on the button marked "Settings".
+- In the side bar on the left click on the button marked "Pages".
+- Under the source title you have two drop down menus, make sure the first is set to "Main" and the second to "Root" and click "Save".
+- Within a couple of minutes the site was live and I received a notification indicating the url.
+
+### Cloning
+
+To clone this repository just follow the steps below.
+
+- Navigate to the Repositories section in my GitHub portfolio.
+- Click on the Repository you want to clone (project-1-hubble).
+- Click the button labeled "Code" and copy the link shown.
+- Open a new folder or your prefered location in your GitPod workspace.
+- Type "git clone" into the terminal, paste the link and click Enter.
+- Job done, you have created a clone of this repository.
+
+### Fork this repository
+
+To fork this repository just follow the steps below.
+
+- Navigate to the repository you wish to fork.
+- On the top right of the page click on the button marked "fork".
+- The repository has now been cloned and you can find it in your account.
+
+ 
+
+[Back to the Top](#three-decades-of-discovery)
+
+---
+
+## Credits
+
+The code for the Hamburger menu used at the top of the page was taken from the first example on the website below and then redesigned for my particular needs.
+
+- [Hamburger menu code](https://alvarotrigo.com/blog/hamburger-menu-css/)
+
+All images, videos and information contained within this site were taken directly from one of four sites.
+
+These being: 
+
+- [The European Space Agency](https://www.esa.int/)
+- [NASA](https://www.nasa.gov/mission_pages/hubble/main/index.html)
+- [HubbleSite](https://hubblesite.org/)
+- [STSci](https://www.stsci.edu/)
+
+These sites allow free use of their content for education purposes and even commercial purposes once the correct credit is given.
+
+`"Unless otherwise specifically stated, no claim to copyright is being asserted by STScI and material on this site may be freely used as in the public domain in accordance with NASA's contract. However, it is requested that in any subsequent use of this work NASA and STScI be given appropriate acknowledgement."`
+
+
+
+
+[Back to the Top](#three-decades-of-discovery)
+
+---
+
+## Acknowledgements
+I would like to acknowledge the help and support given by my mentor Chris Quinn, all of the students in my own study group aswell as all the students in the wider Code Institute Slack channels. My cohort Facilitator Kasia Bogucka and all of the staff at Code Institute.
+The sense of comraderie among all of these individuals has helped me to feel at home on my journey to a new career in programming.
+
+[Back to the Top](#three-decades-of-discovery)
+
+---
+
+## Author Info
+
+-GitHub - [Ken Sheridan](https://github.com/KSheridan86)
+
+[Back to the Top](#three-decades-of-discovery)

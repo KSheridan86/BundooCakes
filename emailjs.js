@@ -36,33 +36,30 @@ function validateForm() {
     let message = document.getElementById('message').value;
     let msgError = document.getElementById('msgError');
 
-    if (name == null || name == "") {
+    if (!name) {
         nameError.style.display = 'block';
         return false
     } else {
         nameError.style.display = 'none';
-    }
-
-    if (email == null || email == "") {
-        emailError.style.display = 'block';
-        return false
-    } else if (!email.includes('@')) {
-        emailError.style.display = 'block';
-        return false
-    } else if (!email.includes('.')) {
-        emailError.style.display = 'block';
-        return false
-    } else {
-        emailError.style.display = 'none';
-    }
-
-    if (message == null || message == "") {
-        msgError.style.display = 'block';
-        console.log(message)
-        return false
-    } else {
-        msgError.style.display = 'none';
-        return true
+        if (email == null || email == "") {
+            emailError.style.display = 'block';
+            return false
+        } else if (!email.includes('@')) {
+            emailError.style.display = 'block';
+            return false
+        } else if (!email.includes('.')) {
+            emailError.style.display = 'block';
+            return false
+        } else {
+            emailError.style.display = 'none';
+        }
+        if (!message) {
+            msgError.style.display = 'block';
+            return false
+        } else {
+            msgError.style.display = 'none';
+            return true
+        }
     }
 }
 
