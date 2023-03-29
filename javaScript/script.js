@@ -2,49 +2,49 @@ let allBtn = document.querySelector(".all-btn");
 if (allBtn) {
     allBtn.addEventListener('click', allCakes);
 }
-let savouryBtn = document.querySelector(".savoury-btn");
-if (savouryBtn) {
-    savouryBtn.addEventListener('click', showSavoury);
+let fondantBtn = document.querySelector(".fondant-btn");
+if (fondantBtn) {
+    fondantBtn.addEventListener('click', showfondant);
 }
 let cupcakesBtn = document.querySelector(".cupcakes-btn");
 if (cupcakesBtn) {
     cupcakesBtn.addEventListener('click', showCupcakes);
 }
-let occasionsBtn = document.querySelector(".occasions-btn");
-if (occasionsBtn) {
-    occasionsBtn.addEventListener('click', showOccasions);
+let ButterCreamBtn = document.querySelector(".butter-cream-btn");
+if (ButterCreamBtn) {
+    ButterCreamBtn.addEventListener('click', showButterCream);
 }
 let box = document.querySelector('#box-of-cakes');
-let savouryBox = document.querySelector('#savoury')
-let occasionsBox = document.querySelector('#occasions')
+let fondantBox = document.querySelector('#fondant')
+let ButterCreamBox = document.querySelector('#butter-cream')
 let cupcakesBox = document.querySelector('#cupcakes')
 
 function allCakes() {
     box.style.display = 'flex';
-    savouryBox.style.display = 'none';
+    fondantBox.style.display = 'none';
     cupcakesBox.style.display = 'none';
-    occasionsBox.style.display = 'none';
+    ButterCreamBox.style.display = 'none';
 }
 
-function showSavoury() {
+function showfondant() {
     box.style.display = 'none';
-    savouryBox.style.display = 'flex';
+    fondantBox.style.display = 'flex';
     cupcakesBox.style.display = 'none';
-    occasionsBox.style.display = 'none';
+    ButterCreamBox.style.display = 'none';
 }
 
 function showCupcakes() {
     box.style.display = 'none';
-    savouryBox.style.display = 'none';
+    fondantBox.style.display = 'none';
     cupcakesBox.style.display = 'flex';
-    occasionsBox.style.display = 'none';
+    ButterCreamBox.style.display = 'none';
 }
 
-function showOccasions() {
+function showButterCream() {
     box.style.display = 'none';
-    savouryBox.style.display = 'none';
+    fondantBox.style.display = 'none';
     cupcakesBox.style.display = 'none';
-    occasionsBox.style.display = 'flex';
+    ButterCreamBox.style.display = 'flex';
 }
 
 // Code to hide the back to top button until the user scrolls down
