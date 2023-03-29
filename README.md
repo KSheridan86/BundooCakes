@@ -1,10 +1,10 @@
-# Three Decades of Discovery
-## The Hubble Space Telescope
+# Bundoo Cakes
+## Static site for a craft bakery
 
 
-> Live site available here: [Three Decades of Discovery](https://ksheridan86.github.io/project-1-hubble/index.html)
+> Live site available here: [Bundoo Cakes](https://www.bundoocakes.ie)
 
-![responsive-example](./assets/docs/responsive-design.png)
+![responsive-example](./docs/amiresponsive.png)
 
 
 ## Table of Contents
@@ -16,20 +16,22 @@
 - [Technologies](#technologies)
 - [Deployment](#deployment)
 - [Credits](#credits)
-- [Acknowledgements](#acknowledgements)
 - [Author Info](#author-info)
 
 ------
 
 ## Description
-This project was designed to give information and provide education on the Hubble Space Telescope. The information provided is easily understandable and will give a user who is familiar with the telescope aswell as a user who has never heard of the telescope a brief understanding of what it is, what it does, it's history and contributions to science.
+This is a static site built using HTML, CSS/Bootstrap & Javascript for a craft bakery.
+Deciding on this project was pretty easy as it has been built as a real world, live site for a friend of mine's home bakery business.
+Although she already has a presence on social media, this site provides another avenue for potential customers to find her products. It includes pictures, information, prices and a form to get in touch with the baker directly for information or to make an order. 
 
-It will also include multiple examples of Hubbles imagery.
+Having a website alongside social media accounts can help to create a centralized hub for potential customers to find information about the products and services on offer. A website can also act as a powerful marketing tool, allowing them to showcase their brand and create a professional online presence. Additionally, it can help them to drive more traffic to their social media accounts, as well as providing a platform for collecting valuable customer data.
+
 
 ------
 ## Theme 
 
-The theme choosen for this site was Space and Sci-Fi in general, the main question I considered at every step was:
+The main theme chosen for this site was 'Simplicity', the question I considered at every step was:
 
 `Is it
 Minimal, Clean, Slick, Professional?`
@@ -38,57 +40,72 @@ Minimal, Clean, Slick, Professional?`
 Therefore I chose only a few simple colors to highlight the quality of the images themselves.
 
 These were:
-- #000 Black
-- #CCC Off White
-- #80b0bb Light blue
+A liner gradient on the body that shifts between shades of pink and green:
+- #f8d9d3
+- #ebc2b9
+- #cbdabc
+- #a1c8b9
+
+Dark Green used for buttons, navbar and the footer. 
+- #23967f 
+
+
+
+To ensure it was visible over the chosen elements background color the text was then either:
+- #f5f5f5 WhiteSmoke
+or
+- #000000 Black
+
 
 The images contained these colors but were also rich in various hues of yellow, orange, red, green and blue.
 By keeping the color scheme simple the colors in the images get to take center stage.
 
-I then implemented a scroll style which would maximize the impact of the images.
-By giving the images a position of "sticky" in the css file they would stick to the top of the page and let the following text roll over the top.
-To enhance this effect I gave the text sections an opaque background so even as they were covering the image you could still see it holding firm on the top of the page.
+I then implemented a scroll style which would maximize the impact of the header image.
+By giving the header image a position of "sticky" it would stick to the top of the page and let the following text roll over the top.
+
+
+[Back to the Top](#bundoo-cakes)
 
 ---
 
 ## Features
 
-> ### Navigation menu [screenshot](./assets/docs/menu.png)
-On mobile and tablet devices the main navigation menu is housed inside a hamburger menu. (See Credits below...[credits](#credits))
-This opens up with a little animation and reveals links to all four pages.
-On laptops or bigger devices the menu is spread across the header bar which also contains the logo.
+> ### Navigation menu 
+On mobile the main navigation menu is housed inside a hamburger menu. This slides open from the side and includes all navigation links. This was based on a bootstrap 5 navbar.
+On tablets or bigger devices the menu is spread across the header bar which also contains the logo.
+![screenshot](./docs/nav-menu.png)
 
-> ### Logo [screenshot](./assets/docs/logo.png)
-The logo is simply the name of the telescope in an off white color and shown in the iconic NASA font. This is also a link to the Home page which can be easily accessed from anywhere within the site.
 
-> ### Hero Image [screenshot](./assets/docs/Home-page.png)
-The Hero image changes on each of the first three pages, the gallery page has enough imagery so as not to warrant one.
-Each image was chosen with regard to the content on each page.
+> ### Logo 
+The logo is simply the name of the bakery and a picture of a cupcake, this sits at the top left of the page and is universal across the site.
+![screenshot](./docs/logo.png)
 
-The Home page opens with a shot of planet Earth our one and only home in this vast galactic neighbourhood.
 
-The About page continues with this idea seen on the home page but incorporates a visual of Hubble in orbit around earth.
+> ### Hero Image 
+The Hero image is a large png of an AI generated cupcake, it sits a the top of the home page. It's background is transparent so the animated linear-gradient effect can be seen flowing around it. 
+![screenshot](./docs/hero.png)
+  
 
-The Operations page shows the Space Shuttle Discovery sitting on the launchpad at Kennedy Space Center, Florida. It was this shuttle that launched Hubble into orbit and performed multiple servicing missions to the telescope.   
+> ### Footer 
+The Footer includes a small block at the bottom of the page with a link to the web developers site and a large section that includes newsletter sign up, company information/contact information and social media links.
+![screenshot](./docs/footer.png)
 
-> ### Footer [screenshot](./assets/docs/footer.png)
-The Footer includes all social media links which link to Hubbles official social media accounts.
 
-On top of the footer you will find an attached "Back to Top" button, the text inside this button relays the current page title and allows quick navigation to the top of the page and ultimately the navigation menu.
-Because of the usefulness of this button the footer is fixed to the bottom of the viewport and will stay in place as you scroll around the page.
 
-> ### Home Page  [screenshot](./assets/docs/Home-page.png)
-This page gives a brief synopsis of the telescope and it's contributions to the scientific community.
-Here you will also find a video packed with wonderful imagery from the solar system and beyond.
-> ### About Page [screenshot](./assets/docs/about-page.png)
-This page summarises the story of Hubble, from who it was named for, when it was launched to it's continuing contributions.
-> ### Operations Page [screenshot](./assets/docs/operations-page.png)
-Here you will find information on who operates the telescope and information on the systems onboard that allow it's mission to be such a success.
+> ### Home Page  
+This page gives an introduction to the bakery, it includes a ["Featured Products"](./docs/featured-products.png) section to help capture potential customers attention and a ["Testimonials"](./docs/testimonials.png) section to further assure potential customers that they are in the right place.
+![screenshot](./docs/home-page.png)
+> ### Cakes Page 
+This page gives an overview of the types of cakes that are made, the services available, the prices and plenty of pictures.
+![screenshot](./docs/cakes-page.png)
+> ### Baker Page 
+Here you will find information on the company owner and main baker Jenn.
+![screenshot](./docs/baker-page.png)
+> ### Image Gallery 
+This page holds numerous high quality images.
+![screenshot](./docs/gallery-page.png)
 
-> ### Image Gallery [screenshot](./assets/docs/gallery-page.png)
-This page holds numerous high quality images taken by the Hubble telescope. 
-
-[Back to the Top](#three-decades-of-discovery)
+[Back to the Top](#bundoo-cakes)
 
 ---
 
@@ -98,7 +115,7 @@ Testing was done in a number of ways.
 
  > #### Manual Testing
  
- This was undertaken by myself, my wife and a number of friends, aswell as the Code Institute slack channels.
+ This was undertaken by myself, my wife and a number of friends.
  We tested all links to confirm they worked and opened on a new blank page and went where they were supposed to. Multiple devices were used to confirm the site worked as it should and it displayed correctly across different screen sizes and browsers.
 
 
@@ -115,23 +132,23 @@ Screenshots of all these results can be found below.
 
 [CSS](./assets/docs/css.png)
 [Home](./assets/docs/home.png)
-[About](./assets/docs/about.png)
-[Operations](./assets/docs/operations.png)
+[Cakes](./assets/docs/about.png)
+[Baker](./assets/docs/operations.png)
 [Gallery](./assets/docs/gallery.png)
 
-> #### Responsivity Testing
+> #### Responsive Testing
 
 
 This website allowed me to select a number of devices with different size screens and viewports and see how my website looked on each of them.
 
-- [Responsive Checker](https://responsivechecker.net/responsive)
+- [Responsive Checker](https://ui.dev/amiresponsive)
 
 > #### Google Lighthouse
 
 ![Mobile Results](./assets/docs/lighthouse-mobile-400px.png) ![Desktop Results](./assets/docs/lighthouse-desktop-400px.png)
 
 
-[Back to the Top](#three-decades-of-discovery)
+[Back to the Top](#bundoo-cakes)
 
 ---
 
@@ -139,32 +156,34 @@ This website allowed me to select a number of devices with different size screen
 
 - HTML
 - CSS
+- Bootstrap 5
+- JavaScript
+- Git
 - GitHub
-- GitPod
 - Visual Studio Code
 - Markdown
 - FontAwesome
-- CDNfonts
+- Google Fonts
 
 #### Resources
 
-- Code Institute Curriculum
+- NCI Curriculum
 - YouTube
 - Udemy
 - FreeCodeCamp
-- W3Schools.com
+- W3Schools
 - MDN Web Docs
 
 
 
-[Back to the Top](#three-decades-of-discovery)
+[Back to the Top](#bundoo-cakes)
 
 ---
 
 ## Deployment
 
 The steps below will outline how to deploy, clone or fork this repository.
-These steps assume that you have a GitHub/GitPod account, if not please start [here](https://www.github.com) by creating a GitHub account and installing the GitPod extension.
+These steps assume that you have a GitHub account, if not please start [here](https://www.github.com) by creating a GitHub account.
 
 This project was deployed using GitHub pages.
 The procedure for doing this is very straight forward.
@@ -179,9 +198,9 @@ The procedure for doing this is very straight forward.
 To clone this repository just follow the steps below.
 
 - Navigate to the Repositories section in my GitHub portfolio.
-- Click on the Repository you want to clone (project-1-hubble).
+- Click on the Repository you want to clone (BundooCakes).
 - Click the button labeled "Code" and copy the link shown.
-- Open a new folder or your prefered location in your GitPod workspace.
+- Open a new folder or your preferred location in your GitPod/VsCode workspace.
 - Type "git clone" into the terminal, paste the link and click Enter.
 - Job done, you have created a clone of this repository.
 
@@ -193,9 +212,9 @@ To fork this repository just follow the steps below.
 - On the top right of the page click on the button marked "fork".
 - The repository has now been cloned and you can find it in your account.
 
- 
 
-[Back to the Top](#three-decades-of-discovery)
+
+[Back to the Top](#bundoo-cakes)
 
 ---
 
@@ -221,20 +240,15 @@ These sites allow free use of their content for education purposes and even comm
 
 
 
-[Back to the Top](#three-decades-of-discovery)
+[Back to the Top](#bundoo-cakes)
 
 ---
 
-## Acknowledgements
-I would like to acknowledge the help and support given by my mentor Chris Quinn, all of the students in my own study group aswell as all the students in the wider Code Institute Slack channels. My cohort Facilitator Kasia Bogucka and all of the staff at Code Institute.
-The sense of comraderie among all of these individuals has helped me to feel at home on my journey to a new career in programming.
-
-[Back to the Top](#three-decades-of-discovery)
-
----
 
 ## Author Info
 
--GitHub - [Ken Sheridan](https://github.com/KSheridan86)
+Ken Sheridan, Full Stack Software Developer.
+- [GitHub](https://github.com/KSheridan86)
+- [Linkedin](https://www.linkedin.com/in/kensheridan86/)
 
-[Back to the Top](#three-decades-of-discovery)
+[Back to the Top](#bundoo-cakes)

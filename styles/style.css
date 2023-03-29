@@ -11,7 +11,7 @@
 
 body {
     background-image: linear-gradient(to bottom right,
-            rgb(248, 217, 211) 0%, rgb(235, 194, 185) 40%, rgb(203, 218, 188) 60%, rgb(161, 200, 185) 100%);
+            #f8d9d3 0%, #ebc2b9 40%, #cbdabc 60%, #a1c8b9 100%);
     background-size: 200% 200%;
     animation: colorChange 5s linear infinite alternate;
 }
@@ -138,7 +138,7 @@ a:hover {
     animation-iteration-count: 1;
 }
 .btn:hover {
-    color: whitesmoke;
+    color: #f5f5f5;
     animation-name: img-swell;
     animation-duration: .75s;
     animation-fill-mode: forwards;
