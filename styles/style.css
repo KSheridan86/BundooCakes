@@ -3,10 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    /* font-family: 'Oswald', sans-serif; */
-
-    /* font-family: 'Bangers', cursive; */
-    /* font-family: 'Caveat', cursive; */
 }
 
 body {
@@ -41,11 +37,6 @@ nav,
 
 ul>li>a.active {
     color: black;
-}
-@media (min-width: 768px) {
-    ul>li>a.active>i {
-        color: #23967f;
-    }
 }
 
 ul {
@@ -294,14 +285,8 @@ a:hover {
     display: flex;
 }
 
-#butter-cream {
-    display: none;
-}
-
-#cupcakes {
-    display: none;
-}
-
+#butter-cream,
+#cupcakes,
 #fondant {
     display: none;
 }
@@ -330,7 +315,6 @@ a:hover {
 .hero-lg-screen {
     background: url("../images/mobile-hero-compressed.png");
     background-repeat: no-repeat;
-    /* background-position: 0rem 6rem; */
     text-align: start;
     width: 50%;
     height: 100vh;
@@ -394,7 +378,7 @@ a:hover {
 
 @keyframes nav-slide {
     from {
-        transform: translateX();
+        transform: translateX(0);
     }
 
     to {
@@ -484,6 +468,9 @@ a:hover {
     #hero-box {
         height: 70vh;
     }
+    ul>li>a.active>i {
+        color: #23967f;
+    }
 }
 @media (min-width: 768px) and (max-width: 968px) {
     .footer-borders-about {
@@ -542,9 +529,4 @@ a:hover {
     .footer-borders-4x4 {
         border-top: none;
     }
-}
-
-
-.review {
-    display: block;
 }
