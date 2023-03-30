@@ -1,0 +1,25 @@
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
+<url>
+<loc>http://www.bundoocakes.ie/</loc>
+<lastmod>2023-03-30T10:30:33+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>http://www.bundoocakes.ie/cakes/</loc>
+<lastmod>2023-03-30T10:30:33+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://www.bundoocakes.ie/baker/</loc>
+<lastmod>2023-03-30T10:30:33+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://www.bundoocakes.ie/gallery/</loc>
+<lastmod>2023-03-30T10:30:33+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+</urlset>

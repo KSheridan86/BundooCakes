@@ -15,14 +15,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Banger&family=Caveat:wght@500&family=Lobster&family=Special+Elite&family=Teko&family=Oswald&family=Playfair+Display:wght@500&display=swap"
         rel="stylesheet">
-
-
     <title>Bundoo Cakes</title>
 </head>
 
 <body>
-    <!-- Bootstrap 5 responsive navbar -->
 
+    <!-- Bootstrap 5 responsive navbar -->
     <button class="menu-btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#pop-out-nav"
         aria-controls="pop-out-nav">
         <span>
@@ -33,12 +31,13 @@
     <div class="container-fluid mt-1">
 
         <h1 class="m-auto logo d-md-none text-uppercase txt-shadow"><a href="../">Bundoo <img
-                    class="cupcake mb-2 me-auto" src="../images/logo.png">Cakes</a></h1>
+                    class="cupcake mb-2 me-auto" src="../images/logo.png"
+                    alt="png image of a cupcake used in the logo">Cakes</a></h1>
 
         <ul class=" text-start d-none d-md-flex txt-shadow">
             <li class="nav-item me-5">
                 <h1 class="logo text-uppercase"><a href="../">Bundoo <img class="cupcake mb-2 me-auto"
-                            src="../images/logo.png">Cakes</a></h1>
+                            src="../images/logo.png" alt="png image of a cupcake used in the logo">Cakes</a></h1>
             </li>
             <li class="nav-item mt-3">
                 <a class="nav-link lg-nav" href="../"><i class="fas fa-home me-3"></i> Home</a>
@@ -55,7 +54,7 @@
         </ul>
     </div>
 
-    <div class="offcanvas offcanvas-start d-md-none" id="pop-out-nav" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start d-md-none" id="pop-out-nav">
         <div class="offcanvas-header">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -85,7 +84,7 @@
             <div class="row justify-content-around mb-5">
                 <h3 class="text-center text-uppercase txt-shadow fs-1 mt-3 mb-4">Say Hello to Jenn!</h3>
                 <div class="col-12 col-lg-5">
-                    <img class="col-12 baker-pic come-in border border-dark rounded mt-2" src="../images/jenn.webp">
+                    <img class="col-12 baker-pic come-in border border-dark rounded mt-2" src="../images/jenn.webp" alt="pic of the company owner and main baker">
                     <div class="text-box text-center mt-3 rounded shadow come-in">
                         <p class="p-2 p-md-4 p-lg-1">
                             Meet our fantastic baker with over a decade of experience in creating custom cakes.
@@ -119,13 +118,13 @@
                         </div>
                         <div id="msg-box">
                             <div class="mb-2">
-                                <label for="name"></label>
+                                <label for="fullName"></label>
                                 <input type="text" class="form-control shadow m-auto" id="fullName"
                                     placeholder="Please enter your name..." required>
                                 <small class="text-danger" id="nameError">**Please enter your name**</small>
                             </div>
                             <div class="mb-2">
-                                <label for="email"></label>
+                                <label for="email_id"></label>
                                 <input type="email" class="form-control shadow m-auto" id="email_id"
                                     placeholder="Please enter your email..." required>
                                 <small class="text-danger" id="emailError">**Please enter a valid email**</small>
@@ -162,7 +161,6 @@
     </main>
 
     <!-- Footer -->
-
     <footer class="text-center text-lg-start mt-5" id="footer">
 
         <!-- Newsletter Signup -->
@@ -170,25 +168,25 @@
             <div class="row justify-content-lg-center justify-content-md-center">
                 <form class="col-12 col-md-7 col-lg-6 col-xl-3 form-inline footer-borders">
                     <div class="form-group mb-2 text-center mt-3 text-uppercase txt-shadow">
-                        <h5 class="fs-3">
+                        <h3>
                             <!-- Keep up to date with upcoming events and special offers<br> -->
                             Sign up to our Newsletter here
-                        </h5>
+                        </h3>
                     </div>
                     <div id="newsletter-box" class="form-group container mt-4 mb-4 text-center">
-                        <label for="name" class="d-none">Name</label>
+                        <label for="nameNl" class="d-none">Name</label>
                         <input type="text" class="form-control shadow m-auto" name="name" id="nameNl"
                             placeholder="Enter your Name..." required>
                         <small class="text-danger" id="nameErrorNl">**Please enter your name**</small>
 
                         <br>
-                        <label for="email" class="d-none">Email</label>
+                        <label for="emailNl" class="d-none">Email</label>
                         <input type="email" class="form-control shadow m-auto" name="email" id="emailNl"
                             placeholder="Enter your Email..." required>
                         <small class="text-danger" id="emailErrorNl">**Please enter a valid email**</small>
 
                         <br>
-                        <button id="nlBtn" type="" class="cake-btn btn shadow txt-shadow mb-4">Sign Up</button>
+                        <button id="nlBtn" type="submit" class="cake-btn btn shadow txt-shadow mb-4">Sign Up</button>
                     </div>
                     <div id="newsletter-success" class="form-group container mt-4 mb-4 text-center">
                         <h3 class="text-uppercase txt-shadow fs-1 mt-5 mb-5">Thank you!</h3>
@@ -206,7 +204,7 @@
 
                         <div
                             class="me-5 d-lg-block text-center text-lg-center mt-3 text-uppercase txt-shadow footer-borders">
-                            <h5 class="fs-3">Connect with us on Social media</h5>
+                            <h3>Connect with us on Social media</h3>
 
                             <div class="col-lg-12 text-center mb-3 mt-lg-5">
                                 <a href="https://www.facebook.com/bundoocakes" target="_blank" rel="noopener"
@@ -221,6 +219,7 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
                 </section>
 
                 <!-- About -->
@@ -256,9 +255,6 @@
             </div>
         </div>
 
-
-        <!-- Footer image to mirror header -->
-
         <div class="nav-menu">
             <div class="p-2 text-start txt-shadow">
                 <a class="chimp-tech" href="https://www.chimptech.ie" target="_blank" rel="noopener"
@@ -284,8 +280,6 @@
 
     </footer>
 
-
-
     <!-- Javascript imports -->
     <script src="../javaScript/script.js"></script>
     <script type="module" src="../javaScript/emailjs.js"></script>
@@ -296,9 +290,8 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/7beb4c51dd.js" crossorigin="anonymous" defer></script>
     <!-- Emailjs Script -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
-    <!-- possibly needed for emailjs -->
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 </body>
 

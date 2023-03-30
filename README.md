@@ -71,38 +71,57 @@ By giving the header image a position of "sticky" it would stick to the top of t
 ## Features
 
 > ### Navigation menu 
+
 On mobile the main navigation menu is housed inside a hamburger menu. This slides open from the side and includes all navigation links. This was based on a bootstrap 5 navbar.
 On tablets or bigger devices the menu is spread across the header bar which also contains the logo.
+
 ![screenshot](./docs/nav-menu.png)
 
 
 > ### Logo 
+
 The logo is simply the name of the bakery and a picture of a cupcake, this sits at the top left of the page and is universal across the site.
+
 ![screenshot](./docs/logo.png)
 
 
 > ### Hero Image 
+
 The Hero image is a large png of an AI generated cupcake, it sits a the top of the home page. It's background is transparent so the animated linear-gradient effect can be seen flowing around it. 
+
 ![screenshot](./docs/hero.png)
   
 
 > ### Footer 
+
 The Footer includes a small block at the bottom of the page with a link to the web developers site and a large section that includes newsletter sign up, company information/contact information and social media links.
+
 ![screenshot](./docs/footer.png)
 
 
 
 > ### Home Page  
+
 This page gives an introduction to the bakery, it includes a ["Featured Products"](./docs/featured-products.png) section to help capture potential customers attention and a ["Testimonials"](./docs/testimonials.png) section to further assure potential customers that they are in the right place.
+
 ![screenshot](./docs/home-page.png)
+
 > ### Cakes Page 
+
 This page gives an overview of the types of cakes that are made, the services available, the prices and plenty of pictures.
+
 ![screenshot](./docs/cakes-page.png)
+
 > ### Baker Page 
+
 Here you will find information on the company owner and main baker Jenn.
+
 ![screenshot](./docs/baker-page.png)
+
 > ### Image Gallery 
+
 This page holds numerous high quality images.
+
 ![screenshot](./docs/gallery-page.png)
 
 [Back to the Top](#bundoo-cakes)
@@ -124,22 +143,29 @@ Testing was done in a number of ways.
  All code was run through a validator and returned zero errors.
  These validator sites were:
 
-- [Jigsaw css validator](https://jigsaw.w3.org/css-validator/#validate_by_uri)
+- [Jigsaw css Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri)
 - [W3C Validator](https://validator.w3.org/)
+- [JsHint Validator](https://jshint.com/)
 
 
 Screenshots of all these results can be found below.
 
-[CSS](./assets/docs/css.png)
-[Home](./assets/docs/home.png)
-[Cakes](./assets/docs/about.png)
-[Baker](./assets/docs/operations.png)
-[Gallery](./assets/docs/gallery.png)
+CSS
+
+![CSS](./docs/css-testing.png)
+
+HTML, All pages returned the same result.
+
+![HTML](./docs/html-validation.png)
+
+JavaScript
+
+![JavaScript](./docs/jshint.png)
 
 > #### Responsive Testing
 
 
-This website allowed me to select a number of devices with different size screens and viewports and see how my website looked on each of them.
+This website allowed me to select a number of devices with different size screens and viewports and see how my website looked on each of them. The result of which is displayed [here](#bundoo-cakes) at the top of this page
 
 - [Responsive Checker](https://ui.dev/amiresponsive)
 

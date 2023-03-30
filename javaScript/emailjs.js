@@ -1,10 +1,14 @@
-// Code to set up emails with emailjs
+// Below are the functions used to send emails using emailjs and 
+// manipulate the DOM to reflect the success of the email being sent
+
+// Attach an event listener to the send message button which triggers the sendMail function
 let sendMessage = document.querySelector('#sendMessage');
 if (sendMessage) {
 sendMessage.addEventListener('click', sendMail);
 }
 
-// This function calls the validateForm function and if it returns true sends the email using emailjs
+// This function calls the validateForm function and if it returns true 
+// sends the email using emailjs and triggers the success function
 function sendMail(event) {
     event.preventDefault();
     if (validateForm() === true) {
@@ -12,7 +16,7 @@ function sendMail(event) {
             from_name: document.getElementById('fullName').value,
             email_id: document.getElementById('email_id').value,
             message: document.getElementById('message').value,
-        }
+        };
         emailjs.send("service_hqcpnug", "template_9n8mrmh", params).then(function (res) {
             if (res.status == 200) {
                 console.log("Success", res.status);
@@ -52,7 +56,7 @@ function validateForm() {
                 msgError.style.display = 'block';
             } else {
                 msgError.style.display = 'none';
-                return true
+                return true;
             }
         }
     }
@@ -66,16 +70,12 @@ function success() {
     successBox.style.display = 'block';
 }
 
-// Public key needed for emailjs
-function publicKey() {
-    emailjs.init("uoGVktHyGRIYXRDQY")
-}
-publicKey();
-
+// attach an event listener to the newsletter button which triggers the newsletter function
 let newsletterBtn = document.querySelector('#nlBtn');
 newsletterBtn.addEventListener('click', newsletter);
 
-// This function calls the validateNewsletter function and if it returns true sends the email using emailjs
+// This function calls the validateNewsletter function and if it returns true 
+// sends the email using emailjs and calls the newsletterSuccess function
 function newsletter(event) {
     event.preventDefault();
     if (validateNewsletter() === true) {
@@ -83,7 +83,7 @@ function newsletter(event) {
             from_name: document.getElementById('nameNl').value,
             email_id: document.getElementById('emailNl').value,
             message: "Please add me to your newsletter",
-        }
+        };
         emailjs.send("service_hqcpnug", "template_9n8mrmh", params).then(function (res) {
             if (res.status == 200) {
                 console.log("Success", res.status);
@@ -104,7 +104,7 @@ function validateNewsletter() {
 
     if (name == null || name == "") {
         nameError.style.display = 'block';
-        return false
+        return false;
     } else {
         nameError.style.display = 'none';
     }
@@ -114,10 +114,10 @@ function validateNewsletter() {
         emailError.style.display = 'block';
     } else if (!email.includes('.')) {
         emailError.style.display = 'block';
-        return false
+        return false;
     } else {
         emailError.style.display = 'none';
-        return true
+        return true;
     }
 }
 
@@ -128,3 +128,10 @@ function newsletterSuccess() {
     let newsletterSuccess = document.querySelector('#newsletter-success');
     newsletterSuccess.style.display = 'block';
 }
+
+
+// Public key needed for emailjs, declared and called here
+function publicKey() {
+    emailjs.init("uoGVktHyGRIYXRDQY");
+}
+publicKey();
