@@ -4,7 +4,7 @@
 
 > Live site available here: [Bundoo Cakes](https://www.bundoocakes.ie)
 
-![responsive-example](./docs/amiresponsive.png)
+![responsive-example](./assets/docs/amiresponsive.png)
 
 
 ## Table of Contents
@@ -26,6 +26,8 @@ Deciding on this project was pretty easy as it has been built as a real world, l
 Although she already has a presence on social media, this site provides another avenue for potential customers to find her products. It includes pictures, information, prices and a form to get in touch with the baker directly for information or to make an order. 
 
 Having a website alongside social media accounts can help to create a centralized hub for potential customers to find information about the products and services on offer. A website can also act as a powerful marketing tool, allowing them to showcase their brand and create a professional online presence. Additionally, it can help them to drive more traffic to their social media accounts, as well as providing a platform for collecting valuable customer data.
+
+According to a report by Bord Bia (the Irish Food Board), the bakery sector in Ireland is estimated to be worth over €500 million per year, with the artisanal and craft bakery sector representing a significant portion of that market. This report also notes that there has been a growing demand for artisanal and craft bakery products in Ireland, particularly among younger consumers who are seeking out high-quality, locally produced food products.
 
 
 ------
@@ -75,28 +77,28 @@ By giving the header image a position of "sticky" it would stick to the top of t
 On mobile the main navigation menu is housed inside a hamburger menu. This slides open from the side and includes all navigation links. This was based on a bootstrap 5 navbar.
 On tablets or bigger devices the menu is spread across the header bar which also contains the logo.
 
-![screenshot](./docs/nav-menu.png)
+![screenshot](./assets/docs/nav-menu.png)
 
 
 > ### Logo 
 
 The logo is simply the name of the bakery and a picture of a cupcake, this sits at the top left of the page and is universal across the site.
 
-![screenshot](./docs/logo.png)
+![screenshot](./assets/docs/logo.png)
 
 
 > ### Hero Image 
 
 The Hero image is a large png of an AI generated cupcake, it sits a the top of the home page. It's background is transparent so the animated linear-gradient effect can be seen flowing around it. 
 
-![screenshot](./docs/hero.png)
+![screenshot](./assets/docs/hero.png)
   
 
 > ### Footer 
 
 The Footer includes a small block at the bottom of the page with a link to the web developers site and a large section that includes newsletter sign up, company information/contact information and social media links.
 
-![screenshot](./docs/footer.png)
+![screenshot](./assets/docs/footer.png)
 
 
 
@@ -104,25 +106,25 @@ The Footer includes a small block at the bottom of the page with a link to the w
 
 This page gives an introduction to the bakery, it includes a ["Featured Products"](./docs/featured-products.png) section to help capture potential customers attention and a ["Testimonials"](./docs/testimonials.png) section to further assure potential customers that they are in the right place.
 
-![screenshot](./docs/home-page.png)
+![screenshot](./assets/docs/home-page.png)
 
 > ### Cakes Page 
 
 This page gives an overview of the types of cakes that are made, the services available, the prices and plenty of pictures.
 
-![screenshot](./docs/cakes-page.png)
+![screenshot](./assets/docs/cakes-page.png)
 
 > ### Baker Page 
 
 Here you will find information on the company owner and main baker Jenn.
 
-![screenshot](./docs/baker-page.png)
+![screenshot](./assets/docs/baker-page.png)
 
 > ### Image Gallery 
 
 This page holds numerous high quality images.
 
-![screenshot](./docs/gallery-page.png)
+![screenshot](./assets/docs/gallery-page.png)
 
 [Back to the Top](#bundoo-cakes)
 
@@ -152,15 +154,15 @@ Screenshots of all these results can be found below.
 
 CSS
 
-![CSS](./docs/css-testing.png)
+![CSS](./assets/docs/css-testing.png)
 
 HTML, All pages returned the same result.
 
-![HTML](./docs/html-validation.png)
+![HTML](./assets/docs/html-validation.png)
 
 JavaScript
 
-![JavaScript](./docs/jshint.png)
+![JavaScript](./assets/docs/jshint.png)
 
 > #### Responsive Testing
 
@@ -171,7 +173,15 @@ This website allowed me to select a number of devices with different size screen
 
 > #### Google Lighthouse
 
-![Mobile Results](./assets/docs/lighthouse-mobile-400px.png) ![Desktop Results](./assets/docs/lighthouse-desktop-400px.png)
+Google Lighthouse is an open-source, automated tool for auditing the performance, accessibility, best practices, and search engine optimization (SEO) of web pages. It was created by Google and is built into Google Chrome's DevTools, making it easily accessible for developers and webmasters.
+
+Lighthouse provides a comprehensive report on a web page's performance, including metrics such as load time, page size, and number of requests. It also identifies areas for improvement and provides recommendations on how to fix them.
+
+In addition to performance, Lighthouse also analyzes a page's accessibility, including color contrast, keyboard navigation, and other factors that affect users with disabilities. It also checks for adherence to best practices, such as use of HTTPS and correct use of images and metadata.
+
+The results of this report are shown below.
+
+![Lighthouse Results](./assets/docs/lighthouse.png)
 
 
 [Back to the Top](#bundoo-cakes)
