@@ -43,20 +43,23 @@ Therefore I chose only a few simple colors to highlight the quality of the image
 
 These were:
 A liner gradient on the body that shifts between shades of pink and green:
-- #f8d9d3
-- #ebc2b9
-- #cbdabc
-- #a1c8b9
+
+- ![#f8d9d3](https://placehold.co/15x15/f8d9d3/f8d9d3.png) `#f8d9d3`
+- ![#ebc2b9](https://placehold.co/15x15/ebc2b9/ebc2b9.png) `#ebc2b9`
+- ![#cbdabc](https://placehold.co/15x15/cbdabc/cbdabc.png) `#cbdabc`
+- ![#a1c8b9](https://placehold.co/15x15/a1c8b9/a1c8b9.png) `#a1c8b9`
+
 
 Dark Green used for buttons, navbar and the footer. 
-- #23967f 
+- ![#23967f](https://placehold.co/15x15/23967f/23967f.png) `#23967f`
 
 
 
 To ensure it was visible over the chosen elements background color the text was then either:
-- #f5f5f5 WhiteSmoke
+- ![#f5f5f5](https://placehold.co/15x15/f5f5f5/f5f5f5.png) `Whitesmoke - #f5f5f5`
+
 or
-- #000000 Black
+- ![#000000](https://placehold.co/15x15/000000/000000.png) `Black - #000000`
 
 
 The images contained these colors but were also rich in various hues of yellow, orange, red, green and blue.
@@ -65,6 +68,22 @@ By keeping the color scheme simple the colors in the images get to take center s
 I then implemented a scroll style which would maximize the impact of the header image.
 By giving the header image a position of "sticky" it would stick to the top of the page and let the following text roll over the top.
 
+
+------
+## Wireframes
+BalsamiQ was used to create Desktop and Mobile designs for each page of the site (Tablet size devices follow the Mobile design layout).
+
+### Home-Page Wireframe
+![Home-Desktop-Wireframe](./assets/docs/Wireframe%20Home.png) ![Home-Mobile-Wireframe](./assets/docs/Wirframe-Mobile%20Home.png)
+
+### Cakes-Page Wireframe
+![Cakes-Desktop-Wireframe](./assets/docs/Wireframe%20Cakes.png) ![Home-Mobile-Wireframe](./assets/docs//Wireframe-Mobile%20Cakes.png)
+
+### Baker-Page Wireframe
+![Baker-Desktop-Wireframe](./assets/docs/Wireframe%20Baker.png) ![Home-Mobile-Wireframe](./assets/docs/Wireframe-Mobile%20Baker.png)
+
+### Gallery Wireframe
+![Gallery-Desktop-Wireframe](./assets/docs/Wireframe%20Gallery.png) ![Home-Mobile-Wireframe](./assets/docs/Wireframe-Mobile%20Gallery.png)
 
 [Back to the Top](#bundoo-cakes)
 
@@ -183,6 +202,34 @@ The results of this report are shown below.
 
 ![Lighthouse Results](./assets/docs/lighthouse.png)
 
+### Website Optimization & SEO
+
+> ##### Optimization
+To help the site reach a broader audience some optimization methods were implemented, these included -
+- Speed Optimization
+
+Photos were cropped, compressed and converted to a web friendly format. Pre-load, Lazy loading and defer methods were used when loading resources to help speed up content delivery
+- UX Optimization
+
+Intuitive navigation, clear calls to action and a simple, easy to follow layout were adopted from the start. 
+Ensuring all images were served with an alt text, adhering to proper heading structure and ensuring the contrast between text and background colors were some of the ways I improved accessibility.
+
+> ##### SEO
+A few simple measures were introduced to improve the sites visibility to search engines, these included -
+- Meta Tags
+
+ Description tag, to give the potential visitor to the site an enticing message.
+
+ Keywords tag, this provides a list of keywords to help search engines understand the content of the site.
+
+
+- Robots.txt file
+
+Here we can tell web crawlers which pages they can or cannot visit, this is useful for sites that are still under construction or have pages that are not ready for public viewing.
+
+- Sitemap.xml file
+
+This tells search engines which pages to index. By creating and submitting a sitemap, it can help to ensure that the site is indexed for search engines.
 
 [Back to the Top](#bundoo-cakes)
 
@@ -197,6 +244,7 @@ The results of this report are shown below.
 - Git
 - GitHub
 - Visual Studio Code
+- Balsamiq
 - Markdown
 - FontAwesome
 - Google Fonts
