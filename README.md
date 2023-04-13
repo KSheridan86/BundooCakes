@@ -303,24 +303,31 @@ To fork this repository just follow the steps below.
 ---
 
 ## Credits
+#### Bootstrap 
+Bootstrap was used for it's grid functionality to provide responsiveness across different device sizes.
+It's pre-built components were also used to help speed up the development process, these were a hamburger menu and an accordion drop down for customer testimonials.
+- `The Bootstrap Authors. (2023). Bootstrap v5 GitHub. https://github.com/twbs/bootstrap/releases/tag/v5.0.0`
 
-The code for the Hamburger menu used at the top of the page was taken from the first example on the website below and then redesigned for my particular needs.
+#### Font Awesome
+Font Awesome was used for the icons on the site. Social media links, Navbar images
+- `Fonticons, Inc. (2022). Font Awesome 6.0.0 - Heart icon. Fonticons, Inc. https://fontawesome.com`
 
-- [Hamburger menu code](https://alvarotrigo.com/blog/hamburger-menu-css/)
+#### PNG tree
+pngtree is a place to get free png images. The main cupcake image used as the background image on the home page was sourced from here.
+- `pngtree.com. (2023). melt PNG Designed By wangmin11134. https://pngtree.com/freepng/fashion-cartoon-three-dimensional-3d-cupcake-paint-chocolate-melting-model_9015323.html?sol=downref&id=bef`
 
-All images, videos and information contained within this site were taken directly from one of four sites.
+#### EmailJS
+Emailjs has a paid service and a free open source version for developers to use. This was used to send the contact form data to the client's email address.
+- `EmailJS. (2023). EmailJS 3.2.0. EmailJS. https://www.emailjs.com/`
 
-These being: 
 
-- [The European Space Agency](https://www.esa.int/)
-- [NASA](https://www.nasa.gov/mission_pages/hubble/main/index.html)
-- [HubbleSite](https://hubblesite.org/)
-- [STSci](https://www.stsci.edu/)
+#### Flat Icon
+flaticon.com was used to source 2 free icons for the site, these were the black and white cupcake from the logo and the back-to-top chevrons.
+- `Flaticon. (2023). Cupcake icons created by nawicon. Flaticon. https://www.flaticon.com/free-icons/cupcake`
+- `Flaticon. (2023). Double arrow icons created by Rahul Kaklotar. https://www.flaticon.com/free-icons/double-arrow`
 
-These sites allow free use of their content for education purposes and even commercial purposes once the correct credit is given.
-
-`"Unless otherwise specifically stated, no claim to copyright is being asserted by STScI and material on this site may be freely used as in the public domain in accordance with NASA's contract. However, it is requested that in any subsequent use of this work NASA and STScI be given appropriate acknowledgement."`
-
+#### Other Media & Content
+All other images and text content were the property of Bundoo Cakes and were provided by the client.
 
 
 
